@@ -3,13 +3,13 @@ The purpose of this project is the discovery in detail UNIX mechanism - pipe.
 
 ### Discription of mandatory part
 The program pipex should repeat the behaviour of the next shell command
-'''bash
+```bash
 $> < file1 cmd1 | cmd2 > file2
-'''
+```
 and looks like this:
-'''bash
+```bash
 $> ./pipex file1 cmd1 cmd2 file2
-'''
+```
 All errors like: wrong commands, permission to files and etc, need be handle.
 
 ### Discription of bonus part
@@ -23,5 +23,5 @@ Support << and >>, when instead of file1 is here_doc.
 ```bash
 $> cmd1 << LIMITER | cmd2 >> file2
 
-$> ./pipex here_doc LIMITER cmd1 cmd2 file2
+$> /pipex here_doc LIMITER cmd1 cmd2 file2
 ```
